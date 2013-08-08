@@ -1,0 +1,62 @@
+<interface>
+        <name>Get OID defined in cipUrpfIfMonTable of CISCO-IP-URPF-MIB</name>
+        <description>Queries a Cisco host for uRFP interface drops. Can do "loose" and "strict" for both IPv4 and IPv6</description>
+        <script_path>|path_cacti|/scripts/ss_cisco_ip_urpf_mib_if.php</script_path>
+        <script_function>ss_cisco_ip_urpf_if</script_function>
+        <script_server>php</script_server>
+        <arg_prepend>|host_hostname| |host_snmp_community| |host_snmp_version|</arg_prepend>
+        <arg_index>index</arg_index>
+        <arg_query>query</arg_query>
+        <arg_get>get</arg_get>
+        <index_order>ipAddressFamily:ifDescr</index_order>
+        <index_order_type>alphabetic</index_order_type>
+        <index_title_format>|chosen_order_field|</index_title_format>
+        <output_delimeter>!</output_delimeter>
+        <fields>
+                <ipAddressFamily>
+                        <name>IP address family</name>
+                        <direction>input</direction>
+                        <query_name>addressfamily</query_name>
+                </ipAddressFamily>
+                <ifDescr>
+                        <name>Description</name>
+                        <direction>input</direction>
+                        <query_name>descr</query_name>
+                </ifDescr>
+                <ifName>
+                        <name>Name</name>
+                        <direction>input</direction>
+                        <query_name>name</query_name>
+                </ifName>
+                <ifAlias>
+                        <name>Interface description</name>
+                        <direction>input</direction>
+                        <query_name>alias</query_name>
+                </ifAlias>
+                <ifAdminStatus>
+                        <name>Administrative status</name>
+                        <direction>input</direction>
+                        <query_name>adminstatus</query_name>
+                </ifAdminStatus>
+                <ifOperStatus>
+                        <name>Operational status</name>
+                        <direction>input</direction>
+                        <query_name>operstatus</query_name>
+                </ifOperStatus>
+                <drops>
+                        <name>uRPF drops per interface</name>
+                        <direction>output</direction>
+                        <query_name>drops</query_name>
+                </drops>
+                <dropsSup>
+                        <name>uRPF suppressed drops per interface</name>
+                        <direction>output</direction>
+                        <query_name>dropssuppressed</query_name>
+                </dropsSup>
+                <dropRate>
+                        <name>uRPF drop rate per interface</name>
+                        <direction>output</direction>
+                        <query_name>droprate</query_name>
+                </dropRate>
+        </fields>
+</interface>
