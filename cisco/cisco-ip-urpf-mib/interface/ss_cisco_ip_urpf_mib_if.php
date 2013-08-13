@@ -91,11 +91,31 @@ function ss_cisco_ip_urpf_if($hostname, $snmp_community, $snmp_version, $cmd, $q
 
                 case "adminstatus":
                     $value = ss_cisco_ip_urpf_if_get($hostname, $snmp_community, $oids["ifAdminStatus"] . ".$ifIndex", $snmp_version);
+#                    settype($value, "integer");
+#                    print gettype($value) . "\n";
+                    if ($value = 1) {
+                        $value = "up";
+                    }
+                    elseif ($value = 2) {
+                        $value = "down";
+                    }
+                    elseif ($value = 3) {
+                        $value = "testing";
+                    }
                     $result = $ifPlusIpIndex . "!" . $value;
                     break;
 
                 case "operstatus":
                     $value = ss_cisco_ip_urpf_if_get($hostname, $snmp_community, $oids["ifOperStatus"] . ".$ifIndex", $snmp_version);
+                    if ($value = 1) {
+                        $value = "up";
+                    }
+                    elseif ($value = 2) {
+                        $value = "down";
+                    }
+                    elseif ($value = 3) {
+                        $value = "testing";
+                    }
                     $result = $ifPlusIpIndex . "!" . $value;
                     break;
 
