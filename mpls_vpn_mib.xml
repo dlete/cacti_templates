@@ -1,0 +1,72 @@
+<interface>
+    <name>Get OID defined in mplsVpnVrfPerfTable of MPLS-VPN-MIB</name>
+    <description>Queries a host for number of routes in a VRF</description>
+    <script_path>|path_cacti|/scripts/ss_mpls_vpn_mib.php</script_path>
+    <script_function>ss_mpls_vpn_mib</script_function>
+    <script_server>php</script_server>
+    <arg_prepend>|host_hostname| |host_snmp_community| |host_snmp_version|</arg_prepend>
+    <arg_index>index</arg_index>
+    <arg_query>query</arg_query>
+    <arg_get>get</arg_get>
+    <index_order>rd</index_order>
+    <index_order_type>alphabetic</index_order_type>
+    <index_title_format>|chosen_order_field|</index_title_format>
+    <output_delimeter>!</output_delimeter>
+    <fields>
+        <rd>
+            <name>Route Distinguisher</name>
+            <direction>input</direction>
+            <query_name>rd</query_name>
+        </rd>
+        <vrfDescription>
+            <name>Description</name>
+            <direction>input</direction>
+            <query_name>descr</query_name>
+        </vrfDescription>
+        <operStatus>
+            <name>Operational status</name>
+            <direction>input</direction>
+            <query_name>operstatus</query_name>
+        </operStatus>
+        <ifsActive>
+            <name>Active interfaces</name>
+            <direction>input</direction>
+            <query_name>activeifs</query_name>
+        </ifsActive>
+        <ifsAssociated>
+            <name>Associated interfaces</name>
+            <direction>input</direction>
+            <query_name>associatedifs</query_name>
+        </ifsAssociated>
+        <currentRoutes>
+            <name>Current routes</name>
+            <direction>input</direction>
+            <query_name>routesCurrent</query_name>
+        </currentRoutes>
+        <maxRoutes>
+            <name>Maximum routes</name>
+            <direction>input</direction>
+            <query_name>routeMax</query_name>
+        </maxRoutes>
+        <thresMid>
+            <name>Mid-level threshold</name>
+            <direction>input</direction>
+            <query_name>midThreshold</query_name>
+        </thresMid>
+        <routesAdded>
+            <name>Routes Added</name>
+            <direction>output</direction>
+            <query_name>routesAdded</query_name>
+        </routesAdded>
+        <routesDeleted>
+            <name>Routes Deleted</name>
+            <direction>output</direction>
+            <query_name>routesDeleted</query_name>
+        </routesDeleted>
+        <routesCurrent>
+            <name>Routes Current</name>
+            <direction>output</direction>
+            <query_name>routesCurrent</query_name>
+        </routesCurrent>
+    </fields>
+</interface>
