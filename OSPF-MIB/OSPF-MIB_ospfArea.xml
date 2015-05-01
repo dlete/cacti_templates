@@ -1,0 +1,33 @@
+<interface>
+	<name>Get OSPF area counters</name>
+	<description>Queries a host for oid under the tree ospfAreaTable of OSPF-MIB</description>
+	<oid_index>.1.3.6.1.2.1.14.2.1.1</oid_index>
+    <oid_index_parse>OID/REGEXP:.*\.([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})$</oid_index_parse>
+	<index_order>ospfAreaId</index_order>
+	<index_order_type>alphabetic</index_order_type>
+	<index_title_format>|chosen_order_field|</index_title_format>
+
+	<fields>
+		<ospfAreaId>
+			<name>OSPF Area</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.14.2.1.1</oid>
+		</ospfAreaId>
+		<ospfSpfRuns>
+			<name>OSPF SPF Runs</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.2.1.14.2.1.4</oid>
+		</ospfSpfRuns>
+		<ospfAreaLsaCount>
+			<name>Bytes Out</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.2.1.14.2.1.7</oid>
+		</ospfAreaLsaCount>
+	</fields>
+</interface>

@@ -1,0 +1,138 @@
+<interface>
+	<name>Get SNMP Interfaces</name>
+	<description>Queries oid under cieIfPacketStats of the MIB CISCO-IF-EXTENSION-MIB</description>
+	<oid_index>.1.3.6.1.2.1.2.2.1.1</oid_index>
+	<oid_num_indexes>.1.3.6.1.2.1.2.1.0</oid_num_indexes>
+	<index_order>ifDescr:ifName:ifHwAddr:ifIndex</index_order>
+	<index_order_type>numeric</index_order_type>
+	<index_title_format>|chosen_order_field|</index_title_format>
+
+	<fields>
+		<ifIndex>
+			<name>Index</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.1</oid>
+		</ifIndex>
+		<ifOperStatus>
+			<name>Status</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.8</oid>
+		</ifOperStatus>
+		<ifDescr>
+			<name>Description</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.2</oid>
+		</ifDescr>
+		<ifName>
+			<name>Name (IF-MIB)</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.31.1.1.1.1</oid>
+		</ifName>
+		<ifAlias>
+			<name>Alias (IF-MIB)</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.31.1.1.1.18</oid>
+		</ifAlias>
+		<ifType>
+			<name>Type</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.3</oid>
+		</ifType>
+		<ifSpeed>
+			<name>Speed</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.5</oid>
+		</ifSpeed>
+		<ifHighSpeed>
+			<name>High Speed</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.31.1.1.1.15</oid>
+		</ifHighSpeed>
+		<ifHwAddr>
+			<name>Hardware Address</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.6</oid>
+		</ifHwAddr>
+        <ifIP>
+            <name>IP Address</name>
+            <method>walk</method>
+            <source>OID/REGEXP:.*\.([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})$</source>
+            <direction>input</direction>
+            <oid>.1.3.6.1.2.1.4.20.1.2</oid>
+        </ifIP>
+        <cieIfInRuntsErrs>
+            <name>Packet input runts</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.4.1.9.9.276.1.1.1.1.4</oid>
+        </cieIfInRuntsErrs>
+        <cieIfInGiantsErrs>
+            <name>Packet input giants</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.4.1.9.9.276.1.1.1.1.5</oid>
+        </cieIfInGiantsErrs>
+        <cieIfInFramingErrs>
+            <name>Packet input framing</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.4.1.9.9.276.1.1.1.1.6</oid>
+        </cieIfInFramingErrs>
+        <cieIfInOverrunErrs>
+            <name>Packet input framing</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.4.1.9.9.276.1.1.1.1.7</oid>
+        </cieIfInOverrunErrs>
+        <cieIfInIgnored>
+            <name>Packet input ignored</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.4.1.9.9.276.1.1.1.1.8</oid>
+        </cieIfInIgnored>
+        <cieIfInAbortErrs>
+            <name>Packet input abort</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.4.1.9.9.276.1.1.1.1.9</oid>
+        </cieIfInAbortErrs>
+        <cieIfInputQueueDrops>
+            <name>Packet input queue drops</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.4.1.9.9.276.1.1.1.1.10</oid>
+        </cieIfInputQueueDrops>
+        <cieIfOutputQueueDrops>
+            <name>Packet output queue drops</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.4.1.9.9.276.1.1.1.1.11</oid>
+        </cieIfOutputQueueDrops>
+	</fields>
+</interface>
