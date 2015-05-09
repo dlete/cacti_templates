@@ -6,7 +6,7 @@
 		<data_input_id>hash_030024bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
 		<graphs>
 			<hash_1100245632f372a65aebb7228a0b2499eefb38>
-				<name>Local</name>
+				<name>IPv4 Local</name>
 				<graph_template_id>hash_00002467df1dbd0302537dd715506261343eb3</graph_template_id>
 				<rrd>
 					<item_000>
@@ -21,23 +21,23 @@
 					</item_001>
 				</rrd>
 				<sv_graph>
-					<hash_120024c07b9b4a86db026dc8e20723209d008d>
+					<hash_12002409c792cf6c71796c230db718f49dacc4>
 						<field_name>title</field_name>
-						<sequence>1</sequence>
-						<text>|host_description| - IP Datagrams Local</text>
-					</hash_120024c07b9b4a86db026dc8e20723209d008d>
+						<sequence>2</sequence>
+						<text>|host_description| - IPv4 Datagrams Local</text>
+					</hash_12002409c792cf6c71796c230db718f49dacc4>
 				</sv_graph>
 				<sv_data_source>
-					<hash_130024a0a5b6294507b172e46326cce6c4ace7>
+					<hash_1300240ff90f03f309786c33f40b921638063e>
 						<field_name>name</field_name>
 						<data_template_id>hash_010024f2e9e1eee53787ed31db163fa75da7bc</data_template_id>
-						<sequence>1</sequence>
-						<text>|host_description| - IP Datagrams Local</text>
-					</hash_130024a0a5b6294507b172e46326cce6c4ace7>
+						<sequence>2</sequence>
+						<text>|host_description| - IPv4 Datagrams Local</text>
+					</hash_1300240ff90f03f309786c33f40b921638063e>
 				</sv_data_source>
 			</hash_1100245632f372a65aebb7228a0b2499eefb38>
 			<hash_110024c514b4dfe55c61848602e7b910a23d0c>
-				<name>Discarded</name>
+				<name>IPv4 Discarded</name>
 				<graph_template_id>hash_00002435474c0beceddf60497a9ef95530a816</graph_template_id>
 				<rrd>
 					<item_000>
@@ -52,23 +52,23 @@
 					</item_001>
 				</rrd>
 				<sv_graph>
-					<hash_120024eb60312bd720037f05cec82cead0617f>
+					<hash_120024adecb906e425bd50d1377b0e171f20a2>
 						<field_name>title</field_name>
-						<sequence>1</sequence>
-						<text>|host_description| - IP Datagrams Discarded</text>
-					</hash_120024eb60312bd720037f05cec82cead0617f>
+						<sequence>2</sequence>
+						<text>|host_description| - IPv4 Datagrams Discarded</text>
+					</hash_120024adecb906e425bd50d1377b0e171f20a2>
 				</sv_graph>
 				<sv_data_source>
-					<hash_1300249430a7aa51a5a818ae68b9f06334c9a2>
+					<hash_130024c3b95e22e8b2943d79edf0fb39ef1042>
 						<field_name>name</field_name>
 						<data_template_id>hash_0100244cba00e7efbff535aa81e7f7184ad27f</data_template_id>
-						<sequence>1</sequence>
-						<text>|host_description| - IP Datagrams Discarded</text>
-					</hash_1300249430a7aa51a5a818ae68b9f06334c9a2>
+						<sequence>2</sequence>
+						<text>|host_description| - IPv4 Datagrams Discarded</text>
+					</hash_130024c3b95e22e8b2943d79edf0fb39ef1042>
 				</sv_data_source>
 			</hash_110024c514b4dfe55c61848602e7b910a23d0c>
 			<hash_1100247c8b820b76b6f92d1ab6a4c4a0f77a73>
-				<name>Errors</name>
+				<name>IPv4 Errors</name>
 				<graph_template_id>hash_0000248f624179c251d8419c8a8a365dafe71a</graph_template_id>
 				<rrd>
 					<item_000>
@@ -93,23 +93,23 @@
 					</item_003>
 				</rrd>
 				<sv_graph>
-					<hash_1200241336068018905f99f41ccc360d6793c4>
+					<hash_120024bb0b3b3881aa113a6cc1cd4bfa7aeb82>
 						<field_name>title</field_name>
-						<sequence>1</sequence>
-						<text>|host_description| - IP Datagrams Errors</text>
-					</hash_1200241336068018905f99f41ccc360d6793c4>
+						<sequence>2</sequence>
+						<text>|host_description| - IPv4 Datagrams Errors</text>
+					</hash_120024bb0b3b3881aa113a6cc1cd4bfa7aeb82>
 				</sv_graph>
 				<sv_data_source>
-					<hash_130024035771ae84ce5da7a68aa249dc4636ab>
+					<hash_130024ca71c4256fa2d199e2f93d0bd8829ac1>
 						<field_name>name</field_name>
 						<data_template_id>hash_01002468dc78ff4a36aab2a0f70d8ce4356b55</data_template_id>
-						<sequence>1</sequence>
-						<text>|host_description| - IP Datagrams Errors</text>
-					</hash_130024035771ae84ce5da7a68aa249dc4636ab>
+						<sequence>2</sequence>
+						<text>|host_description| - IPv4 Datagrams Errors</text>
+					</hash_130024ca71c4256fa2d199e2f93d0bd8829ac1>
 				</sv_data_source>
 			</hash_1100247c8b820b76b6f92d1ab6a4c4a0f77a73>
 			<hash_1100243af7d632ff9e0df3e02a3065c126465b>
-				<name>Reasemblies</name>
+				<name>IPv4 Reasemblies</name>
 				<graph_template_id>hash_000024c789813d7df45616cb062c30c57d490a</graph_template_id>
 				<rrd>
 					<item_000>
@@ -129,23 +129,23 @@
 					</item_002>
 				</rrd>
 				<sv_graph>
-					<hash_120024072e9f81c3498b463169fac91f9d4ee3>
+					<hash_120024756406e10a0862987176b3207f0dadcf>
 						<field_name>title</field_name>
-						<sequence>1</sequence>
-						<text>|host_description| - IP Datagrams Reasemblies</text>
-					</hash_120024072e9f81c3498b463169fac91f9d4ee3>
+						<sequence>2</sequence>
+						<text>|host_description| - IPv4 Datagrams Reasemblies</text>
+					</hash_120024756406e10a0862987176b3207f0dadcf>
 				</sv_graph>
 				<sv_data_source>
-					<hash_1300245fdb42a73025db3ee56fb973e90652cf>
+					<hash_1300247dda6af85459650f110acef9f724f7b9>
 						<field_name>name</field_name>
 						<data_template_id>hash_0100241afaf76c98318878dc67ccf33712d114</data_template_id>
-						<sequence>1</sequence>
-						<text>|host_description| - IP Datagrams Reasemblies</text>
-					</hash_1300245fdb42a73025db3ee56fb973e90652cf>
+						<sequence>2</sequence>
+						<text>|host_description| - IPv4 Datagrams Reasemblies</text>
+					</hash_1300247dda6af85459650f110acef9f724f7b9>
 				</sv_data_source>
 			</hash_1100243af7d632ff9e0df3e02a3065c126465b>
 			<hash_110024401cee9364c260d81f9f021b913b7beb>
-				<name>Fragmentations</name>
+				<name>IPv4 Fragmentations</name>
 				<graph_template_id>hash_0000247c5674f534131ad6c9e63c80964cb899</graph_template_id>
 				<rrd>
 					<item_000>
@@ -165,11 +165,11 @@
 					</item_002>
 				</rrd>
 				<sv_graph>
-					<hash_120024a3f6c427f1263aaeb2b44f9ed1cb9bed>
+					<hash_120024508e8f2d769bf5108088a3a14b0bb7a3>
 						<field_name>title</field_name>
-						<sequence>1</sequence>
-						<text>|host_description| - IP Datagrams Fragmentations</text>
-					</hash_120024a3f6c427f1263aaeb2b44f9ed1cb9bed>
+						<sequence>2</sequence>
+						<text>|host_description| - IPv4 Datagrams Fragmentations</text>
+					</hash_120024508e8f2d769bf5108088a3a14b0bb7a3>
 				</sv_graph>
 				<sv_data_source>
 					<hash_130024b8d3eeada9f0b386c5f0db7d3a5a90e8>
@@ -178,16 +178,16 @@
 						<sequence>1</sequence>
 						<text>|host_description| - IP Datagrams Fragmentations</text>
 					</hash_130024b8d3eeada9f0b386c5f0db7d3a5a90e8>
-					<hash_1300247db902c47d3def86fe3c7563c6d7aef5>
+					<hash_130024b41ca2cfc3e6ce0e988a65f94830c60b>
 						<field_name>name</field_name>
 						<data_template_id>hash_010024bb167fcef01f9b427699c93ab02d98a5</data_template_id>
-						<sequence>1</sequence>
-						<text>|host_description| - IP Datagrams Fragmentations</text>
-					</hash_1300247db902c47d3def86fe3c7563c6d7aef5>
+						<sequence>2</sequence>
+						<text>|host_description| - IPv4 Datagrams Fragmentations</text>
+					</hash_130024b41ca2cfc3e6ce0e988a65f94830c60b>
 				</sv_data_source>
 			</hash_110024401cee9364c260d81f9f021b913b7beb>
 			<hash_110024a98a2e7a533c0134260cff56a2e8acfc>
-				<name>Received/Forwarded</name>
+				<name>IPv4 Received/Forwarded</name>
 				<graph_template_id>hash_0000241f142d16fa4c5580a3eb5205901cf9ef</graph_template_id>
 				<rrd>
 					<item_000>
@@ -202,19 +202,19 @@
 					</item_001>
 				</rrd>
 				<sv_graph>
-					<hash_1200241f676bf4353a6c543fe00fea2f33772e>
+					<hash_120024d55817c688a54b5a77cd62735e18e677>
 						<field_name>title</field_name>
-						<sequence>1</sequence>
-						<text>|host_description| - IP Datagrams Received/Forwarded</text>
-					</hash_1200241f676bf4353a6c543fe00fea2f33772e>
+						<sequence>2</sequence>
+						<text>|host_description| - IPv4 Datagrams Received/Forwarded</text>
+					</hash_120024d55817c688a54b5a77cd62735e18e677>
 				</sv_graph>
 				<sv_data_source>
-					<hash_1300243dfef9140809f5343b012eb8083227dd>
+					<hash_13002477a0e49a79e19deb84837e6db5e07be5>
 						<field_name>name</field_name>
 						<data_template_id>hash_010024c66e80c1220a7f03e36df07febee3e1d</data_template_id>
-						<sequence>1</sequence>
-						<text>|host_description| - IP Datagrams Received/Forwarded</text>
-					</hash_1300243dfef9140809f5343b012eb8083227dd>
+						<sequence>2</sequence>
+						<text>|host_description| - IPv4 Datagrams Received/Forwarded</text>
+					</hash_13002477a0e49a79e19deb84837e6db5e07be5>
 				</sv_data_source>
 			</hash_110024a98a2e7a533c0134260cff56a2e8acfc>
 		</graphs>
@@ -335,10 +335,10 @@
 		</fields>
 	</hash_030024bf566c869ac6443b0c75d1c32b5a350e>
 	<hash_00002467df1dbd0302537dd715506261343eb3>
-		<name>IP-MIB - Local</name>
+		<name>IP-MIB - IPv4 Local</name>
 		<graph>
 			<t_title>on</t_title>
-			<title>|host_description| - IP Datagrams Local</title>
+			<title>|host_description| - IPv4 Datagrams Local</title>
 			<t_image_format_id></t_image_format_id>
 			<image_format_id>1</image_format_id>
 			<t_height></t_height>
@@ -496,10 +496,10 @@
 		</inputs>
 	</hash_00002467df1dbd0302537dd715506261343eb3>
 	<hash_00002435474c0beceddf60497a9ef95530a816>
-		<name>IP-MIB - Discarded</name>
+		<name>IP-MIB - IPv4 Discarded</name>
 		<graph>
 			<t_title>on</t_title>
-			<title>|host_description| - IP Datagrams Discarded</title>
+			<title>|host_description| - IPv4 Datagrams Discarded</title>
 			<t_image_format_id></t_image_format_id>
 			<image_format_id>1</image_format_id>
 			<t_height></t_height>
@@ -657,10 +657,10 @@
 		</inputs>
 	</hash_00002435474c0beceddf60497a9ef95530a816>
 	<hash_0000248f624179c251d8419c8a8a365dafe71a>
-		<name>IP-MIB - Errors</name>
+		<name>IP-MIB - IPv4 Errors</name>
 		<graph>
 			<t_title>on</t_title>
-			<title>|host_description| - IP Datagrams Errors</title>
+			<title>|host_description| - IPv4 Datagrams Errors</title>
 			<t_image_format_id></t_image_format_id>
 			<image_format_id>1</image_format_id>
 			<t_height></t_height>
@@ -934,10 +934,10 @@
 		</inputs>
 	</hash_0000248f624179c251d8419c8a8a365dafe71a>
 	<hash_000024c789813d7df45616cb062c30c57d490a>
-		<name>IP-MIB - Reasemblies</name>
+		<name>IP-MIB - IPv4 Reasemblies</name>
 		<graph>
 			<t_title>on</t_title>
-			<title>|host_description| - IP Datagrams Reasemblies</title>
+			<title>|host_description| - IPv4 Datagrams Reasemblies</title>
 			<t_image_format_id></t_image_format_id>
 			<image_format_id>1</image_format_id>
 			<t_height></t_height>
@@ -1153,10 +1153,10 @@
 		</inputs>
 	</hash_000024c789813d7df45616cb062c30c57d490a>
 	<hash_0000247c5674f534131ad6c9e63c80964cb899>
-		<name>IP-MIB - Fragmentations</name>
+		<name>IP-MIB - IPv4 Fragmentations</name>
 		<graph>
 			<t_title>on</t_title>
-			<title>|host_description| - IP Datagrams Fragmentations</title>
+			<title>|host_description| - IPv4 Datagrams Fragmentations</title>
 			<t_image_format_id></t_image_format_id>
 			<image_format_id>1</image_format_id>
 			<t_height></t_height>
@@ -1372,10 +1372,10 @@
 		</inputs>
 	</hash_0000247c5674f534131ad6c9e63c80964cb899>
 	<hash_0000241f142d16fa4c5580a3eb5205901cf9ef>
-		<name>IP-MIB - Received/Forwarded</name>
+		<name>IP-MIB - IPv4 Received/Forwarded</name>
 		<graph>
 			<t_title>on</t_title>
-			<title>|host_description| - IP Datagrams Received/Forwarded</title>
+			<title>|host_description| - IPv4 Datagrams Received/Forwarded</title>
 			<t_image_format_id></t_image_format_id>
 			<image_format_id>1</image_format_id>
 			<t_height></t_height>
@@ -1533,10 +1533,10 @@
 		</inputs>
 	</hash_0000241f142d16fa4c5580a3eb5205901cf9ef>
 	<hash_010024f2e9e1eee53787ed31db163fa75da7bc>
-		<name>IP-MIB - Local</name>
+		<name>IP-MIB - IPv4 Local</name>
 		<ds>
 			<t_name>on</t_name>
-			<name>|host_description| - IP Datagrams Local</name>
+			<name>|host_description| - IPv4 Datagrams Local</name>
 			<data_input_id>hash_030024bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
 			<t_rra_id></t_rra_id>
 			<t_rrd_step></t_rrd_step>
@@ -1639,10 +1639,10 @@
 		</data>
 	</hash_010024f2e9e1eee53787ed31db163fa75da7bc>
 	<hash_0100244cba00e7efbff535aa81e7f7184ad27f>
-		<name>IP-MIB - Discarded</name>
+		<name>IP-MIB - IPv4 Discarded</name>
 		<ds>
 			<t_name>on</t_name>
-			<name>|host_description| - IP Datagrams Discarded</name>
+			<name>|host_description| - IPv4 Datagrams Discarded</name>
 			<data_input_id>hash_030024bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
 			<t_rra_id></t_rra_id>
 			<t_rrd_step></t_rrd_step>
@@ -1745,10 +1745,10 @@
 		</data>
 	</hash_0100244cba00e7efbff535aa81e7f7184ad27f>
 	<hash_01002468dc78ff4a36aab2a0f70d8ce4356b55>
-		<name>IP-MIB - Errors</name>
+		<name>IP-MIB - IPv4 Errors</name>
 		<ds>
 			<t_name>on</t_name>
-			<name>|host_description| - IP Datagrams Errors</name>
+			<name>|host_description| - IPv4 Datagrams Errors</name>
 			<data_input_id>hash_030024bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
 			<t_rra_id></t_rra_id>
 			<t_rrd_step></t_rrd_step>
@@ -1879,10 +1879,10 @@
 		</data>
 	</hash_01002468dc78ff4a36aab2a0f70d8ce4356b55>
 	<hash_0100241afaf76c98318878dc67ccf33712d114>
-		<name>IP-MIB - Reasemblies</name>
+		<name>IP-MIB - IPv4 Reasemblies</name>
 		<ds>
 			<t_name>on</t_name>
-			<name>|host_description| - IP Datagrams Reasemblies</name>
+			<name>|host_description| - IPv4 Datagrams Reasemblies</name>
 			<data_input_id>hash_030024bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
 			<t_rra_id></t_rra_id>
 			<t_rrd_step></t_rrd_step>
@@ -1999,10 +1999,10 @@
 		</data>
 	</hash_0100241afaf76c98318878dc67ccf33712d114>
 	<hash_010024bb167fcef01f9b427699c93ab02d98a5>
-		<name>IP-MIB - Fragmentations</name>
+		<name>IP-MIB - IPv4 Fragmentations</name>
 		<ds>
 			<t_name>on</t_name>
-			<name>|host_description| - IP Datagrams Fragmentations</name>
+			<name>|host_description| - IPv4 Datagrams Fragmentations</name>
 			<data_input_id>hash_030024bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
 			<t_rra_id></t_rra_id>
 			<t_rrd_step></t_rrd_step>
@@ -2119,10 +2119,10 @@
 		</data>
 	</hash_010024bb167fcef01f9b427699c93ab02d98a5>
 	<hash_010024c66e80c1220a7f03e36df07febee3e1d>
-		<name>IP-MIB - Received/Forwarded</name>
+		<name>IP-MIB - IPv4 Received/Forwarded</name>
 		<ds>
 			<t_name>on</t_name>
-			<name>|host_description| - IP Datagrams Received/Forwarded</name>
+			<name>|host_description| - IPv4 Datagrams Received/Forwarded</name>
 			<data_input_id>hash_030024bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
 			<t_rra_id></t_rra_id>
 			<t_rrd_step></t_rrd_step>
