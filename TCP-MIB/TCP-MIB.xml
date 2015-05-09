@@ -1,0 +1,102 @@
+<interface>
+	<name>Get TCP-MIB stats</name>
+	<description>Queries a host for oid under the tree tcp</description>
+	<oid_index>.1.3.6.1.2.1.6.2</oid_index>
+    <oid_index_parse>OID/REGEXP:.*\.([0-9]{1,2})$</oid_index_parse>
+	<index_order>Index</index_order>
+	<index_order_type>alphabetic</index_order_type>
+
+	<fields>
+        <Index>
+            <name>System</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>input</direction>
+            <oid>.1.3.6.1.2.1.1.1</oid>
+        </Index>
+		<tcpActiveOpens>
+			<name>TCP Active Opens</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.2.1.6.5</oid>
+		</tcpActiveOpens>
+		<tcpPassiveOpens>
+			<name>TCP Passive Opens</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.2.1.6.6</oid>
+		</tcpPassiveOpens>
+        <tcpAttemptFails>
+            <name>TCP Failed Attempts</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.6.7</oid>
+        </tcpAttemptFails>
+        <tcpEstabResets>
+            <name>TCP Established Resets</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.6.8</oid>
+        </tcpEstabResets>
+        <tcpCurrEstab>
+            <name>TCP Currently Established</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.6.9</oid>
+        </tcpCurrEstab>
+        <tcpInSegs>
+            <name>TCP Segments Received</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.6.10</oid>
+        </tcpInSegs>
+        <tcpOutSegs>
+            <name>TCP Segments Sent</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.6.11</oid>
+        </tcpOutSegs>
+        <tcpRetransSegs>
+            <name>TCP Segments Retransmitted</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.6.12</oid>
+        </tcpRetransSegs>
+        <tcpInErrs>
+            <name>TCP Segments with error</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.6.14</oid>
+        </tcpInErrs>
+        <tcpOutRsts>
+            <name>TCP Segments with RST flag</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.6.15</oid>
+        </tcpOutRsts>
+        <tcpHCInSegs>
+            <name>TCP Segments Received (64 bit)</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.6.17</oid>
+        </tcpHCInSegs>
+        <tcpHCOutSegs>
+            <name>TCP Segments Sent (64 bit)</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.6.18</oid>
+        </tcpHCOutSegs>
+	</fields>
+</interface>

@@ -1,0 +1,130 @@
+<interface>
+	<name>Get IP-MIB stats</name>
+	<description>Queries a host for oid under the tree ip</description>
+	<oid_index>.1.3.6.1.2.1.4.3</oid_index>
+    <oid_index_parse>OID/REGEXP:.*\.([0-9]{1,2})$</oid_index_parse>
+	<index_order>Index</index_order>
+	<index_order_type>alphabetic</index_order_type>
+
+	<fields>
+		<Index>
+			<name>System</name>
+            <method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+            <oid>.1.3.6.1.2.1.1.1</oid>
+		</Index>
+		<ipInReceives>
+			<name>In IP datagrams received</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.2.1.4.3</oid>
+		</ipInReceives>
+		<ipInHdrErrors>
+			<name>In IP datagrams discarded, errored headers</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.2.1.4.4</oid>
+		</ipInHdrErrors>
+        <ipInAddrErrors>
+            <name>In IP datagrams discarded, invalid IPv4 address</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.4.5</oid>
+        </ipInAddrErrors>
+        <ipForwDatagrams>
+            <name>IP datagrams forwarded</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.4.6</oid>
+        </ipForwDatagrams>
+        <ipInUnknownProtos>
+            <name>IP datagrams discarded, unknown protocols</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.4.7</oid>
+        </ipInUnknownProtos>
+        <ipInDiscards>
+            <name>In IP datagrams discarded</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.4.8</oid>
+        </ipInDiscards>
+        <ipInDelivers>
+            <name>In IP datagrams delivered</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.4.9</oid>
+        </ipInDelivers>
+        <ipOutRequests>
+            <name>Out IP datagrams requested</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.4.10</oid>
+        </ipOutRequests>
+        <ipOutDiscards>
+            <name>Out IP datagrams discarded</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.4.11</oid>
+        </ipOutDiscards>
+        <ipOutNoRoutes>
+            <name>Out IP datagrams discarded, no route</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.4.12</oid>
+        </ipOutNoRoutes>
+        <ipReasmReqds>
+            <name>IP datagrams reasembled, required</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.4.14</oid>
+        </ipReasmReqds>
+        <ipReasmOKs>
+            <name>IP datagrams reasembled, successfully</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.4.15</oid>
+        </ipReasmOKs>
+        <ipReasmFails>
+            <name>IP datagrams reasembled, failed</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.4.16</oid>
+        </ipReasmFails>
+        <ipFragOKs>
+            <name>IP datagrams fragmented, successfully</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.4.17</oid>
+        </ipFragOKs>
+        <ipFragFails>
+            <name>IP datagrams fragmented, failed</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.4.18</oid>
+        </ipFragFails>
+        <ipFragCreates>
+            <name>IP datagrams fragmented, created</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.4.19</oid>
+        </ipFragCreates>
+    </fields>
+</interface>
