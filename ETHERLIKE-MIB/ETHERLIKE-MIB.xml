@@ -1,0 +1,256 @@
+<interface>
+	<name>Get values from oid in ETHERLIKE-MIB</name>
+	<description>Queries oid under the trees dot3StatsTable, dot3ControlTable, dot3PauseTable and dot3HCStatsTable</description>
+	<oid_index>.1.3.6.1.2.1.10.7.2.1.1</oid_index>
+	<index_order>ifDescr:ifName:ifHwAddr:ifIndex</index_order>
+	<index_order_type>numeric</index_order_type>
+	<index_title_format>|chosen_order_field|</index_title_format>
+
+	<fields>
+		<ifIndex>
+			<name>Index</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.1</oid>
+		</ifIndex>
+		<ifOperStatus>
+			<name>Operational status</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.8</oid>
+		</ifOperStatus>
+		<ifDescr>
+			<name>Description</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.2</oid>
+		</ifDescr>
+		<ifName>
+			<name>Name (IF-MIB)</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.31.1.1.1.1</oid>
+		</ifName>
+		<ifAlias>
+			<name>Alias (IF-MIB)</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.31.1.1.1.18</oid>
+		</ifAlias>
+		<ifType>
+			<name>Type</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.3</oid>
+		</ifType>
+		<ifSpeed>
+			<name>Speed</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.5</oid>
+		</ifSpeed>
+		<ifHighSpeed>
+			<name>High Speed</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.31.1.1.1.15</oid>
+		</ifHighSpeed>
+		<ifHwAddr>
+			<name>Hardware Address</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.6</oid>
+		</ifHwAddr>
+        <ifIP>
+            <name>IP Address</name>
+            <method>walk</method>
+            <source>OID/REGEXP:.*\.([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})$</source>
+            <direction>input</direction>
+            <oid>.1.3.6.1.2.1.4.20.1.2</oid>
+        </ifIP>
+        <alignmentErrors>
+            <name>Alignment Errors</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.2.1.2</oid>
+        </alignmentErrors>
+        <FCSErrors>
+            <name>FCS Errors</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.2.1.3</oid>
+        </FCSErrors>
+        <singleCollisionFrames>
+            <name>Single Collision Frames</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.2.1.4</oid>
+        </singleCollisionFrames>
+        <multipleCollisionFrames>
+            <name>Multiple Collision Frames</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.2.1.5</oid>
+        </multipleCollisionFrames>
+        <SQETestErrors>
+            <name>SQE Test Errors</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.2.1.6</oid>
+        </SQETestErrors>
+        <deferredTrasmissions>
+            <name>Deferred Transmissions</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.2.1.7</oid>
+        </deferredTrasmissions>
+        <lateCollisions>
+            <name>Late Collisions</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.2.1.8</oid>
+        </lateCollisions>
+        <excessiveCollisions>
+            <name>Excessive Collisions</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.2.1.9</oid>
+        </excessiveCollisions>
+        <internalMacTransmitErrors>
+            <name>Internal MAC Transmit Errors</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.2.1.10</oid>
+        </internalMacTransmitErrors>
+        <carrierSenseErrors>
+            <name>Carrier Sense Errors</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.2.1.11</oid>
+        </carrierSenseErrors>
+        <frameTooLong>
+            <name>Frame Too Long</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.2.1.13</oid>
+        </frameTooLong>
+        <internalMacReceiveErrors>
+            <name>Internal MAC Receive Errors</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.2.1.16</oid>
+        </internalMacReceiveErrors>
+        <symbolErrors>
+            <name>Symbol Errors</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.2.1.18</oid>
+        </symbolErrors>
+        <controlInUnknownOpcodes>
+            <name>Unknown control opcode frames</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.9.1.2</oid>
+        </controlInUnknownOpcodes>
+        <HCcontrolInUnknownOpcodes>
+            <name>Unknown control opcode frames (64 bit)</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.9.1.3</oid>
+        </HCcontrolInUnknownOpcodes>
+        <InPauseFrames>
+            <name>Pause Frames In</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.10.1.3</oid>
+        </InPauseFrames>
+        <OutPauseFrames>
+            <name>Pause Frames Out</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.10.1.4</oid>
+        </OutPauseFrames>
+        <HCInPauseFrames>
+            <name>Pause Frames In (64 bit)</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.10.1.5</oid>
+        </HCInPauseFrames>
+        <HCOutPauseFrames>
+            <name>Pause Frames Out (64 bit)</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.10.1.6</oid>
+        </HCOutPauseFrames>
+        <HCalignmentErrors>
+            <name>Alignment Errors (64 bit)</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.11.1.1</oid>
+        </HCalignmentErrors>
+        <HCFCSErrors>
+            <name>FCS Errors (64 bit)</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.11.1.2</oid>
+        </HCFCSErrors>
+        <HCinternalMacTransmitErrors>
+            <name>Internal MAC Transmit Errors (64 bit)</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.11.1.3</oid>
+        </HCinternalMacTransmitErrors>
+        <HCframeTooLong>
+            <name>Frame Too Long (64 bit)</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.11.1.4</oid>
+        </HCframeTooLong>
+        <HCinternalMacReceiveErrors>
+            <name>Internal MAC Receive Errors (64 bit)</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.11.1.5</oid>
+        </HCinternalMacReceiveErrors>
+        <HCsymbolErrors>
+            <name>Symbol Errors (64 bit)</name>
+            <method>walk</method>
+            <source>value</source>
+            <direction>output</direction>
+            <oid>.1.3.6.1.2.1.10.7.11.1.6</oid>
+        </HCsymbolErrors>
+    </fields>
+</interface>
