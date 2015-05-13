@@ -1,0 +1,31 @@
+<interface>
+	<name>Get ISIS level counters</name>
+	<description>Queries a host for oid under the tree isisSystemCounterTable of ISIS-MIB</description>
+	<oid_index>.1.3.6.1.2.1.138.1.5.1.1.2</oid_index>
+	<oid_index_parse>OID/REGEXP:.*\.([0-9]{1,3})$</oid_index_parse>
+	<index_order>level</index_order>
+	<index_order_type>alphabetic</index_order_type>
+	<index_title_format>|chosen_order_field|</index_title_format>
+
+	<fields>
+		<isisSysStatLevel>
+			<name>IS-IS level</name>
+			<source>index</source>
+			<direction>input</direction>
+		</isisSysStatLevel>
+		<isisSysSPFRuns>
+			<name>IS-IS SPF Runs</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.2.1.138.1.5.1.1.12</oid>
+		</isisSysSPFRuns>
+		<isisSysStatLSPErrors>
+			<name>IS-IS LSP Errors</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.2.1.138.1.5.1.1.13</oid>
+		</isisSysStatLSPErrors>
+	</fields>
+</interface>

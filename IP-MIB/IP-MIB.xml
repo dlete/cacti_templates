@@ -1,14 +1,14 @@
 <interface>
-	<name>Get IP-MIB stats</name>
-	<description>Queries a host for oid under the tree ip</description>
-	<oid_index>.1.3.6.1.2.1.4.3</oid_index>
+    <name>Get IP-MIB stats</name>
+    <description>Queries a host for oid under the tree ip</description>
+    <oid_index>.1.3.6.1.2.1.4.3</oid_index>
     <oid_index_parse>OID/REGEXP:.*\.([0-9]{1,2})$</oid_index_parse>
-	<index_order>Index</index_order>
-	<index_order_type>alphabetic</index_order_type>
+    <index_order>Index</index_order>
+    <index_order_type>alphabetic</index_order_type>
 
-	<fields>
-		<Index>
-			<name>System</name>
+    <fields>
+        <Index>
+            <name>System</name>
             <method>walk</method>
 			<source>value</source>
 			<direction>input</direction>
